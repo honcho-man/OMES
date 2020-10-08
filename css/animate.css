@@ -1,0 +1,110 @@
+.disappear {
+    opacity: 0;
+    animation-name: fadeinup;
+    -webkit-animation-name: fadeinup;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeinup {
+    0% {
+        opacity: 1;
+        height: 100%;
+    }
+    50% {
+        opacity: 0.5;
+        height: 50%;
+    }
+    100% {
+        opacity: 0;
+        height: 0%;
+    }
+}
+
+@-webkit-keyframes fadeinup {
+    0% {
+        opacity: 1;
+        height: 100%;
+    }
+    50% {
+        opacity: 0.5;
+        height: 50%;
+    }
+    100% {
+        opacity: 0;
+        height: 0%;
+    }
+}
+
+.appear {
+    opacity: 1;
+    animation-name: fadeindown;
+    -webkit-animation-name: fadeindown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeindown {
+    0% {
+        opacity: 0;
+        height: 0%;
+    }
+    100% {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes fadeindown {
+    0% {
+        opacity: 0;
+        height: 0%;
+    }
+    100% {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+.dance {
+    animation: dance 1s linear infinite;
+    -webkit-animation: dance 1s linear infinite;
+}
+
+@keyframes dance {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes dance {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.hide-down {
+    position: fixed;
+    bottom: 50%;
+}
+
+.push-up {
+    position: fixed;
+    top: 0%;
+}

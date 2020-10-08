@@ -1,0 +1,25 @@
+/* For mobile phones: */
+
+@media only screen and (max-width: 700px) {
+    /* For tablets: */
+    .hide-from-small {
+        display: none !important;
+    }
+    .show-on-small {
+        display: block !important;
+    }
+    .main-body {
+        padding: 1.5rem;
+        padding-top: 15% !important;
+        padding-bottom: 15% !important;
+    }
+    .user-form-contn {
+        padding: 0.5rem;
+    }
+    .loader-contn-2 {
+        position: absolute;
+        top: 40%;
+    }
+}
+
+@media only screen and (max-width: 750px) {}
