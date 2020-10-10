@@ -1,5 +1,11 @@
      @media only screen and (min-width: 700px) {
          /* For desktop: */
+         .hide-from-wide {
+             display: none !important;
+         }
+         .show-on-wide {
+             display: block !important;
+         }
          .main-body {
              padding-top: 8%;
          }
@@ -13,6 +19,35 @@
          .loader-contn-2 {
              position: absolute;
              top: 40%;
+         }
+         .nav-bar ul {
+             list-style: none;
+             display: inline-flex;
+             margin-block-end: auto;
+             margin-block-start: 5px;
+         }
+         .nav-bar li {
+             margin: 15px;
+             margin-block-start: 15px;
+         }
+         .nav-bar a {
+             font-size: 14px;
+         }
+         .nav-bar {
+             padding-right: 5px;
+             padding-top: 0;
+         }
+         .landing-header {
+             padding: 0px;
+             padding-left: 3rem;
+             padding-right: 3rem;
+         }
+         .nav-bar img {
+             width: 70%;
+         }
+         .landing-body {
+             padding-left: 3rem;
+             padding-right: 3rem;
          }
      }
      

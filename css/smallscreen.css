@@ -20,6 +20,97 @@
         position: absolute;
         top: 40%;
     }
+    .nav-bar ul {
+        list-style: none;
+        display: inline-flex;
+        margin-block-end: auto;
+        margin-block-start: -7px;
+    }
+    .nav-bar li {
+        margin: 5px;
+        margin-block-start: 15px;
+    }
+    .nav-bar a {
+        font-size: 14px;
+    }
+    .nav-bar {
+        padding-right: 5px;
+        padding-top: 0;
+    }
+    .landing-header {
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .landing-header img {
+        width: 100%;
+    }
+    .shop img {
+        width: 60%;
+    }
+    .brand button {
+        font-size: 18px;
+    }
+    .sidenav-contn {
+        z-index: 100;
+    }
+    .sidenav {
+        background: #211f20;
+        position: absolute;
+        width: 170px;
+        height: 100vh;
+        padding: 2rem;
+    }
+    .dark {
+        height: 100vh;
+        background: #211f208c;
+    }
+    .sidenav ul {
+        list-style: none;
+        padding-inline-start: 0;
+    }
+    .sidenav li {
+        margin: 5px;
+        margin-block-start: 15px;
+    }
+    .sidenav a {
+        font-weight: lighter;
+        font-size: 14px;
+        color: white !important;
+    }
+    .sidenav a:hover {
+        transition: .50s;
+        opacity: 0.6;
+    }
+    .hide {
+        display: none;
+    }
+    .display {
+        display: block;
+    }
+    .force-hide {
+        display: none!important
+    }
+    .force-display {
+        display: block !important;
+    }
+    .force-nav-in {
+        transform: translateX(-1000px);
+    }
+    .landing-header {
+        z-index: 1;
+    }
+    .landing-main-body {
+        z-index: -1;
+    }
+    .landing-main-body h1 {
+        padding-top: 100px;
+    }
+    .landing-image {
+        height: 100vh;
+    }
 }
 
+
+}
 @media only screen and (max-width: 750px) {}

@@ -1,0 +1,98 @@
+body {
+    font-family: 'Montserrat', 'segoe ui' !important;
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+.force-hide {
+    display: none!important
+}
+
+.force-display {
+    display: block !important;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', 'segoe ui' !important;
+}
+
+button:focus {
+    outline: none;
+}
+
+a {
+    color: inherit !important;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.loader {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url(../images/r-architecture-WQCkior21Gc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.roller {
+    border: 2px solid white;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    border-left: 2px solid #56b3431e;
+    border-right: 2px solid #56b3431e;
+}
+
+.roller-div {
+    display: flex;
+    justify-content: center;
+}
+
+.loader-contn {
+    background: #00000083;
+    height: 100vh;
+}
+
+.loader-text {
+    padding: 1rem;
+}
+
+.roller-div h1 {
+    font-weight: 300;
+    color: white;
+}
+
+.loader-text h1 {
+    font-weight: lighter;
+    color: white;
+    font-size: 20px;
+}
+
+.green {
+    color: #56b343;
+}
+
+.roller-div i {
+    transform: translateY(-1px);
+    position: absolute;
+    padding: 1.3rem;
+}

@@ -1,7 +1,7 @@
 var myVar;
 
 function openBody() {
-    myVar = setTimeout(showPage, 15000);
+    myVar = setTimeout(showPage, 10000);
 }
 
 function showPage() {
