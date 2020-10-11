@@ -61,6 +61,9 @@
         height: 100vh;
         padding: 2rem;
     }
+    .landing-image {
+        z-index: -1;
+    }
     .dark {
         height: 100vh;
         background: #211f208c;
@@ -97,17 +100,35 @@
     .force-nav-in {
         transform: translateX(-1000px);
     }
-    .landing-header {
-        z-index: 1;
-    }
-    .landing-main-body {
-        z-index: -1;
-    }
-    .landing-main-body h1 {
-        padding-top: 100px;
+    .side-nav-contn {
+        position: fixed;
+        margin-block-start: 22px;
+        padding-left: 0;
     }
     .landing-image {
-        height: 100vh;
+        padding: 1.2rem;
+        padding-top: 3rem;
+    }
+    .landing-main-body {
+        padding: 1.2rem;
+    }
+    .entrance-text {
+        top: 30%;
+        padding-right: 15px;
+    }
+    .intro {
+        padding-right: 15px;
+    }
+    .entrance-text p,
+    .intro p,
+    .landing-main-body p {
+        font-size: 18px
+    }
+    .landing-footer {
+        padding: 1.2rem;
+    }
+    .footer-image img {
+        width: 80%;
     }
 }
 

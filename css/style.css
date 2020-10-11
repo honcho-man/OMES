@@ -31,6 +31,10 @@ body {
     position: relative;
 }
 
+img {
+    width: 100%;
+}
+
 .main-body {
     display: flex;
     justify-content: center;
@@ -286,7 +290,6 @@ input::placeholder {
 .landing-header {
     background-color: #211f20;
     color: white;
-    position: absolute;
 }
 
 .nav-bar a {
@@ -310,26 +313,94 @@ input::placeholder {
     width: 90%;
 }
 
-.nav-bar a:hover {
+.nav-bar a:hover,
+.footer-list a:hover,
+.footer-nav a:hover {
     transition: .50s;
     opacity: 0.6;
 }
 
-.landing-main-body {
-    position: absolute;
-    top: 0;
-}
-
 .landing-image {
-    background-image: url(../images/r-architecture-0tKCSyLXqQM-unsplash.jpg);
+    background-image: url(../images/stephan-bechert-yFV39g6AZ5o-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
     background-position: center;
     width: 100%;
+    padding: 0 !important;
+    padding-top: 3rem;
+    position: relative;
 }
 
-.landing-image h1 {
+.entrance-text h3 {
+    font-weight: 350;
+    font-size: 30px;
+}
+
+.entrance-text-contn {
+    background: #211f2071;
+    height: 100vh;
+    padding-top: 3rem;
+    padding: 1.2rem;
+    position: relative;
+}
+
+.entrance-text {
+    position: absolute;
     color: white;
-    font-weight: 400;
+    width: 90%;
+}
+
+.entrance-text p {
+    font-weight: lighter;
+}
+
+.entrance-link a {
+    background: #56b343;
+    padding: 8px;
+    border-radius: 3px;
+    font-weight: lighter;
+    box-shadow: 0 0 10px black;
+    opacity: 0.9;
+}
+
+.entrance-link a:hover {
+    transition: .50s;
+    box-shadow: 0 0 8px black;
+    opacity: 1;
+}
+
+.entrance-link {
+    margin-right: -15px !important;
+}
+
+.landing-footer {
+    background: #211f20;
+    color: white;
+}
+
+.landing-footer {
+    font-weight: lighter;
+}
+
+.footer-image {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-list {
+    list-style: none;
+    display: inline-flex;
+    margin-block-end: auto;
+    margin-block-start: 5px;
+}
+
+.footer-list li {
+    margin: 15px;
+    margin-block-start: 15px;
+}
+
+.landing-footer ul {
+    list-style: none;
+    padding-inline-start: 0;
 }

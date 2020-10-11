@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/widescreen.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
 </head>
 
 <body onload="openBody()">
@@ -76,6 +75,24 @@
         </div>
     </div>
     <script src="scripts/js/loader.js"></script>
+    <script>
+        document.querySelector('form').onsubmit = () => {
+            var name = document.getElementById('username').value;
+            localStorage.setItem('userName', name);
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username == 'admin' && password == 'dashboard') {
+                alert('Welcome Admin');
+                location.href = "dashboard.html";
+            } else if (username !== 'admin' || password !== 'dashboard') {
+                alert('you are not an admin');
+            }
+            return false;
+
+        }
+    </script>
 </body>
 
 </html>
