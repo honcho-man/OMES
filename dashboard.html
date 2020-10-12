@@ -7,37 +7,121 @@
     <title>OMES Smart Home Web App: login</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/animate2.css">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/smallscreen.css">
-    <link rel="stylesheet" href="css/widescreen.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="dash-grid/smallscreen.css">
+    <link rel="stylesheet" href="dash-grid/widescreen.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
 </head>
 
-<body onload="openBody()">
-    <div class="background-body"></div>
-    <div id="Loader" class="loader container-fluid text-center p-0">
-        <div class="container-fluid loader-contn p-0">
-            <div class="container-fluid loader-contn-2 p-0">
-                <div class="loader-text container-fluid">
+<body>
+    <div id="MainBody" class="dashboard col-12 col-s-12">
+        <div class="header col-s-12 col-12">
+            <div class="col-8 col-s-8">
+                <div id="Hello" class="col-12 hello borderb col-s-12 col-12">
+
                 </div>
-                <div class="container-fluid roller-div">
-                    <h1><i class="fa fa-home green zoomInOut"></i></h1>
-                    <div class="roller roll"></div>
+                <div class="col-12 welcome-msg borderb col-s-12 col-12">
+                    Manage your home.
+                </div>
+            </div>
+
+            <div class="col-4 col-s-4 user-image">
+                <div class="image text-center">
+                    <i class="fa fa-user-circle"></i>
                 </div>
             </div>
         </div>
+
+        <div class="body col-s-12 col-12">
+            <div class="climate col-12 col-s-12 borderb">
+                <div class="col-8 col-s-8">
+                    <div class="col-12 date col-s-12 col-12">
+                        20 Oct, 2020.
+                    </div>
+                    <div class="col-12 time col-s-12 col-12">
+                        09 : 10 AM
+                    </div>
+                </div>
+
+                <div class="col-4 col-s-4 weather text-center">
+                    <div class="energy">
+                        <i class="fa fa-sun"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-s-12 text-center temp">
+                    <hr>
+                    <div class="col-4 col-s-4 indoor-temp">
+                        0`C <br> <span class="temp-text">Indoor Temp</span>
+                    </div>
+                    <div class="col-4 col-s-4 outdoor-temp">
+                        0`C <br> <span class="temp-text">Outdoor Temp</span>
+                    </div>
+                    <div class="col-4 col-s-4 ideal-temp">
+                        0`C <br> <span class="temp-text">Ideal Temp</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rooms col-12 col-s-12 text-center">
+                <div class="kitchen active-room room-block borderb">
+                    <i class="fa fa-apple-alt"></i> Kitchen
+                </div>
+                <div class="living-room room-block borderb">
+                    <i class="fa fa-apple-alt"></i> Living Room
+                </div>
+                <div class="bedroom room-block borderb">
+                    <i class="fa fa-apple-alt"></i> Bedrooms
+                </div>
+                <div class="toilet room-block borderb">
+                    <i class="fa fa-apple-alt"></i> Toilets
+                </div>
+            </div>
+            <div class="dev col-12 col-s-12">
+                <i class="fa fa-list"></i> Devices
+                <div class="kitchen-dev text-center col-12 col-s-12">
+                    <div class="room-block-inner float-left col-3 col-s-5">
+                        0 Lights
+                    </div>
+                    <div class="room-block-inner float-right col-3 col-s-5">
+                        0 AC
+                    </div>
+                    <div class="room-block-inner mt float-left col-3 col-s-5">
+                        0 Fans
+                    </div>
+                    <div class="room-block-inner mt float-right col-3 col-s-5">
+                        0 Sockets
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer text-center col-s-12 col-12">
+            <div class="col-3 col-s-3">
+                <i class="fa fa-home"></i>
+            </div>
+            <div class="col-3 col-s-3">
+                <i class="fa fa-comment"></i>
+            </div>
+            <div class="col-3 col-s-3">
+                <i class="fa fa-heart"></i>
+            </div>
+            <div class="col-3 col-s-3">
+                <i class="fa fa-gear"></i>
+            </div>
+        </div>
+
     </div>
-    <div id="MainBody" class="main-body container-fluid force-hide">
-        dashboard page
-    </div>
-    <script src="scripts/js/loader.js"></script>
+    <script src="scripts/js/loaer.js"></script>
+    <script>
+        var id = document.getElementById("Hello");
+
+        id.innerHTML = 'hello ' + localStorage.getItem('userName') + ',';
+    </script>
 </body>
 
 </html>
