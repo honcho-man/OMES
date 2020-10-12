@@ -40,8 +40,8 @@
     }
     .temp hr {
         width: 95%;
-        margin-block-end: 2px;
-        margin-block-start: 0px;
+        margin-block-end: 5px;
+        margin-block-start: 3px;
         border: none;
         border-top: 1px solid #0000001e;
     }
