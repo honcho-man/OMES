@@ -21,6 +21,10 @@ body {
     display: block;
 }
 
+#force-hide {
+    display: none!important
+}
+
 .force-hide {
     display: none!important
 }
@@ -31,6 +35,10 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left;
 }
 
 input {
@@ -114,10 +122,6 @@ a:hover {
 .dashboard {
     height: 100vh;
     position: fixed;
-    background-image: url(../images/header_dash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
 }
 
 .borderb {
@@ -129,6 +133,10 @@ a:hover {
     padding-left: 15px;
     padding-right: 15px;
     color: white;
+    background-image: url(../images/header_dash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .body {
@@ -141,16 +149,17 @@ a:hover {
 
 .footer {
     height: 9.7vh;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
-    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.226);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.404);
     background: #ffffff;
 }
 
 .hello {
-    margin-top: 15px;
+    margin-top: 30px;
     text-transform: capitalize;
+    font-weight: 700 !important;
 }
 
 .welcome-msg {
@@ -208,8 +217,9 @@ a:hover {
     position: relative;
     display: flex;
     overflow: scroll;
-    top: -7vh;
+    top: -7.5vh;
     height: 100%;
+    padding-top: 15px;
 }
 
 .room-block {
@@ -223,26 +233,42 @@ a:hover {
     border-radius: 2px;
 }
 
+.room-block i {
+    color: #56b343;
+}
+
+.room-block i:hover {
+    color: white;
+}
+
 .active-room {
-    box-shadow: 0 0px 10px #00000052;
-    background: #000000ab;
+    box-shadow: 0 0px 15px #56b343;
+    background: #56b343;
+    color: white;
+}
+
+.active-room i {
     color: white;
 }
 
 .room-block:hover {
     transition: .50s;
-    box-shadow: 0 0px 10px #00000052;
-    background: #000000ab;
-    color: white;
+    box-shadow: 0 0px 15px #56b343;
+    background: #56b343;
+    color: white !important;
 }
 
 .dev {
     position: relative;
     height: 42vh;
-    bottom: 60vh;
+    bottom: 64vh;
 }
 
-.kitchen-dev {
+.device {
+    margin-top: 15px
+}
+
+.room-dev {
     padding-top: 15px;
     padding-bottom: 15px;
     min-height: 100%;
@@ -255,11 +281,21 @@ a:hover {
     padding: 1.5rem;
     background: rgba(255, 255, 255, 0.925);
     border-radius: 2px;
+    width: 47%;
+}
+
+.room-block-inner i {
+    font-size: 40px;
+}
+
+.room-block-inner i:hover {
+    color: white;
 }
 
 .room-block-inner:hover {
-    box-shadow: 0 0px 10px #00000052;
-    background: #000000ab;
+    box-shadow: 0 0px 10px #56b343;
+    background: #56b343;
+    color: white;
 }
 
 .ml {

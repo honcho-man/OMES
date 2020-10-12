@@ -57,52 +57,154 @@
                 <div class="col-12 col-s-12 text-center temp">
                     <hr>
                     <div class="col-4 col-s-4 indoor-temp">
-                        0`C <br> <span class="temp-text">Indoor Temp</span>
+                        <span class="green">0`C</span> <br> <span class="temp-text">Indoor Temp</span>
                     </div>
                     <div class="col-4 col-s-4 outdoor-temp">
-                        0`C <br> <span class="temp-text">Outdoor Temp</span>
+                        <span class="green">0`C</span> <br> <span class="temp-text">Outdoor Temp</span>
                     </div>
                     <div class="col-4 col-s-4 ideal-temp">
-                        0`C <br> <span class="temp-text">Ideal Temp</span>
+                        <span class="green">0`C</span> <br> <span class="temp-text">Ideal Temp</span>
                     </div>
                 </div>
             </div>
 
             <div class="rooms col-12 col-s-12 text-center">
-                <div class="kitchen active-room room-block borderb">
+                <div id="KitchenBtn" onclick="openKitchen()" class="kitchen active-room room-block borderb">
                     <i class="fa fa-apple-alt"></i> Kitchen
                 </div>
-                <div class="living-room room-block borderb">
+                <div id="LivingBtn" onclick="openLiving()" class="living-room room-block borderb">
                     <i class="fa fa-apple-alt"></i> Living Room
                 </div>
-                <div class="bedroom room-block borderb">
+                <div id="BedBtn" onclick="openBed()" class="bedroom room-block borderb">
                     <i class="fa fa-apple-alt"></i> Bedrooms
                 </div>
-                <div class="toilet room-block borderb">
+                <div id="ToiletBtn" onclick="openToilet()" class="toilet room-block borderb">
                     <i class="fa fa-apple-alt"></i> Toilets
                 </div>
             </div>
             <div class="dev col-12 col-s-12">
-                <i class="fa fa-list"></i> Devices
-                <div class="kitchen-dev text-center col-12 col-s-12">
-                    <div class="room-block-inner float-left col-3 col-s-5">
-                        0 Lights
+                <div id="KitchenDev" class="kitchen-dev room-dev text-center col-12 col-s-12">
+                    <div class="col-12 col-s-12 device mb text-left">
+                        <i class="fa fa-list"></i> Devices<span id="DevNo">(0)</span>
                     </div>
-                    <div class="room-block-inner float-right col-3 col-s-5">
-                        0 AC
+                    <div class="room-block-inner float-left">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 Lights
+                        </div>
                     </div>
-                    <div class="room-block-inner mt float-left col-3 col-s-5">
-                        0 Fans
+                    <div class="room-block-inner float-right">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 AC
+                        </div>
                     </div>
-                    <div class="room-block-inner mt float-right col-3 col-s-5">
-                        0 Sockets
+                    <div class="room-block-inner mt float-left">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 Sockets
+                        </div>
                     </div>
+                </div>
+                <div id="LivingDev" class="living-dev room-dev text-center col-12 col-s-12">
+                    <div class="col-12 col-s-12 device mb text-left">
+                        <i class="fa fa-list"></i> Devices<span id="DevNo">(0)</span>
+                    </div>
+                    <div class="room-block-inner float-left">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 Lights
+                        </div>
+                    </div>
+                    <div class="room-block-inner float-right">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 AC
+                        </div>
+                    </div>
+                    <div class="room-block-inner mt float-left">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-fan"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 Fans
+                        </div>
+                    </div>
+                    <div class="room-block-inner mt float-right">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 Sockets
+                        </div>
+                    </div>
+                </div>
+                <div id="BedDev" class="bedroom-dev room-dev text-center col-12 col-s-12">
+                    <div class="col-12 col-s-12 device mb text-left">
+                        <i class="fa fa-list"></i> Devices<span id="DevNo">(0)</span>
+                    </div>
+                    <div class="room-block-inner float-left">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 Lights
+                        </div>
+                    </div>
+                    <div class="room-block-inner float-right">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 AC
+                        </div>
+                    </div>
+                    <div class="room-block-inner mt float-left">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-fan"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 Fans
+                        </div>
+                    </div>
+                    <div class="room-block-inner mt float-right">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 Sockets
+                        </div>
+                    </div>
+                </div>
+                <div id="ToiletDev" class="toilet-dev room-dev text-center col-12 col-s-12">
+                    <div class="col-12 col-s-12 device mb text-left">
+                        <i class="fa fa-list"></i> Devices<span id="DevNo">(0)</span>
+                    </div>
+                    <div class="room-block-inner float-left">
+                        <div class="col-12 col-s-12 green text-center">
+                            <i class="fa fa-lightbulb"></i>
+                        </div>
+                        <div class="mt col-12 col-s-12 text-center">
+                            0 Lights
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
         <div class="footer text-center col-s-12 col-12">
             <div class="col-3 col-s-3">
-                <i class="fa fa-home"></i>
+                <i class="fa green fa-home"></i>
             </div>
             <div class="col-3 col-s-3">
                 <i class="fa fa-comment"></i>
@@ -116,7 +218,7 @@
         </div>
 
     </div>
-    <script src="scripts/js/loaer.js"></script>
+    <script src="scripts/js/rooms.js"></script>
     <script>
         var id = document.getElementById("Hello");
 
