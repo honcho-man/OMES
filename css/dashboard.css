@@ -192,6 +192,7 @@ a:hover {
     background: white;
     font-size: 12px;
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.226);
+    padding: 10px;
 }
 
 .weather {
