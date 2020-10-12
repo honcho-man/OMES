@@ -38,4 +38,11 @@
     .col-s-12 {
         width: 100%;
     }
+    .temp hr {
+        width: 95%;
+        margin-block-end: 2px;
+        margin-block-start: 0px;
+        border: none;
+        border-top: 1px solid #0000001e;
+    }
 }

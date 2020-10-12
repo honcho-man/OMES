@@ -114,6 +114,10 @@ a:hover {
 .dashboard {
     height: 100vh;
     position: fixed;
+    background-image: url(../images/header_dash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .borderb {
@@ -124,10 +128,6 @@ a:hover {
     height: 25vh;
     padding-left: 15px;
     padding-right: 15px;
-    background-image: url(../images/header_dash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     color: white;
 }
 
@@ -136,6 +136,7 @@ a:hover {
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
+    background: #ffffff7e;
 }
 
 .footer {
@@ -144,6 +145,7 @@ a:hover {
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.226);
+    background: #ffffff;
 }
 
 .hello {
@@ -192,14 +194,13 @@ a:hover {
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.226);
 }
 
-.energy i {
-    font-size: 34px !important;
+.weather {
+    padding: 5px;
 }
 
-.temp hr {
-    width: 95%;
-    margin-block-end: 2px;
-    margin-block-start: 3px;
+.energy i {
+    font-size: 34px !important;
+    color: rgb(255, 187, 0);
 }
 
 .rooms {
@@ -217,16 +218,21 @@ a:hover {
     padding: 13px;
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.267);
     border: 1px solid rgba(128, 128, 128, 0.075);
+    background: white;
+    border-radius: 2px;
 }
 
 .active-room {
     box-shadow: 0 0px 10px #00000052;
-    background: #0000001f;
+    background: #000000ab;
+    color: white;
 }
 
 .room-block:hover {
+    transition: .50s;
     box-shadow: 0 0px 10px #00000052;
-    background: #0000001f;
+    background: #000000ab;
+    color: white;
 }
 
 .dev {
@@ -246,11 +252,13 @@ a:hover {
     border: 1px solid rgba(128, 128, 128, 0.075);
     height: 16.5vh;
     padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.925);
+    border-radius: 2px;
 }
 
 .room-block-inner:hover {
     box-shadow: 0 0px 10px #00000052;
-    background: #0000001f;
+    background: #000000ab;
 }
 
 .ml {
