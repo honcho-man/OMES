@@ -4,7 +4,7 @@ server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'devTech');
 define('DB_PASSWORD', 'Oladmuni2020$');
-define('DB_NAME', 'omes-home-app');
+define('DB_NAME', 'oladmun_omes-home-app');
  
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
