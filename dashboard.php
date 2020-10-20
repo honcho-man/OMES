@@ -17,7 +17,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>OMES Smart Home Web App: login</title>
-    <meta name="description" content="">
+    <link rel="icon" type="image/ico" href="/images/thunder.png">
+    <meta name="description" content="Home Automation Oladmuni Home App">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/animate2.css">
