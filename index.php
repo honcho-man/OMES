@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>OMES Smart Home</title>
-    <link rel="icon" type="image/ico" href="/images/thunder.png">
+    <link rel="icon" type="image/ico" href="images/thunder.png">
     <meta name="description" content="Home Automation Oladmuni Home App">    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
