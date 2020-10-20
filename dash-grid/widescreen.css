@@ -43,8 +43,25 @@
         border: none;
         border-top: 1px solid #0000001e;
     }
+    body {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .dashboard {
+        box-shadow: 0 0px 30px rgba(0, 0, 0, 0.267);
+    }
+    .climate {
+        padding-bottom: 30px !important;
+    }
 }
 
-@media only screen and (max-width: 1340px) {}
+@media (min-width: 768px) {
+    .col-md-10 {
+        -ms-flex: 0 0 80.666667%;
+        flex: 0 0 80.666667%;
+        width: 80.666667%;
+    }
+}
 
 @media only screen and (max-width: 1024px) {}

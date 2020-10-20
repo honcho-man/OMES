@@ -28,7 +28,7 @@
                 <button onclick="openNav()">&#9776;</button>
             </div>
             <div class="col-4 nav-brand">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="images/omes-logo.jpg">
                 </a>
             </div>
@@ -44,11 +44,11 @@
 
                     <div id="SideNav" class="sidenav container-fluid text-left">
                         <ul>
-                            <li><a href="index.html">Get started</a></li>
-                            <li><a href="index.html">About</a></li>
-                            <li><a href="index.html">Why OMES?</a></li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="signup.html">Sign up</a></li>
+                            <li><a href="index.php">Get started</a></li>
+                            <li><a href="index.php">About</a></li>
+                            <li><a href="index.php">Why OMES?</a></li>
+                            <li><a href="login.php">Login</a></li>
+                            <li><a href="signup.php">Sign up</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,18 +61,18 @@
     <div class="landing-header hide-from-small show-on-wide  float-panel container-fluid">
         <div class="row">
             <div class="col-2 col-lg-2 nav-brand ">
-                <a href="index.html">
+                <a href="index.php">
                     <img class="pt-md-3" src="images/omes-logo.jpg">
                 </a>
             </div>
 
             <div class="col-10 pt-lg-3 nav-bar text-right">
                 <ul>
-                    <li><a href="index.html">Get started</a></li>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="index.html">Why OMES?</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="index.php">Get started</a></li>
+                    <li><a href="index.php">About</a></li>
+                    <li><a href="index.php">Why OMES?</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="signup.php">Sign up</a></li>
                 </ul>
                 <a target="_blank" href="http://jiji.ng/sellerpage-335279" title="online shop" role="button">
                     <img src="images/shopping-cart-32.png" alt="">
@@ -88,7 +88,7 @@
                     <h3>Be in control of your home.</h3>
                     <p>One view of your home. Control, organize and manage compatible devices from your phone.</p>
                     <div class="text-center entrance-link container-fluid pt-2 appear">
-                        <a href="signup.html">Get started</a>
+                        <a href="signup.php">Get started</a>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@
         <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="col footer-image">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="images/omes-logo.jpg" alt="OMES logo">
                     </a>
                 </div>
@@ -119,7 +119,7 @@
             </div>
             <div class="col-sm-12 col-md-4 footer-nav col-lg-4">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Gallery</a></li>
                     <li><a href="">Quality Statement</a></li>

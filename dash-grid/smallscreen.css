@@ -40,9 +40,24 @@
     }
     .temp hr {
         width: 95%;
-        margin-block-end: 5px;
+        margin-block-end: 0px;
         margin-block-start: 3px;
         border: none;
         border-top: 1px solid #0000001e;
+    }
+}
+
+@media (max-width: 320px) {
+    .room-block-inner i {
+        font-size: 20px;
+    }
+    .energy i {
+        font-size: 25px;
+    }
+    .climate {
+        padding: 0px;
+    }
+    .hello {
+        margin-top: 20px;
     }
 }

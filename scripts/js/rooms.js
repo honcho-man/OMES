@@ -70,3 +70,4 @@ function closeToilet() {
     RoomsBtn[3].classList.remove('active-room');
     RoomsDev[3].classList.add('force-hide');
 }
+//kitchen light control

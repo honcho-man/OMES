@@ -144,7 +144,7 @@ a:hover {
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
-    background: #ffffff7e;
+    background: #cfcfcf7e;
 }
 
 .footer {
@@ -153,6 +153,10 @@ a:hover {
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.404);
+    background: #ffffff;
+}
+
+.footer div {
     background: #ffffff;
 }
 
@@ -209,7 +213,7 @@ a:hover {
 }
 
 .energy i {
-    font-size: 34px !important;
+    font-size: 34px;
     color: rgb(255, 187, 0);
 }
 
@@ -219,26 +223,47 @@ a:hover {
     overflow: scroll;
     top: -7.5vh;
     height: 100%;
-    padding-top: 15px;
+    padding: 15px;
+}
+
+::selection {
+    background: yellowgreen;
+    /* WebKit/Blink Browsers */
+}
+
+ ::-moz-selection {
+    background: yellowgreen;
+    /* Gecko Browsers */
+}
+
+.rooms::-webkit-scrollbar {
+    width: 0px;
+}
+
+.rooms::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    outline: none;
+}
+
+.rooms::-webkit-scrollbar-button {
+    height: 0px;
+    background-color: transparent;
 }
 
 .room-block {
     height: 50px;
-    min-width: 150px;
+    min-width: 180px;
     margin-right: 15px;
     padding: 13px;
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.267);
     border: 1px solid rgba(128, 128, 128, 0.075);
     background: white;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .room-block i {
     color: #56b343;
-}
-
-.room-block i:hover {
-    color: white;
 }
 
 .active-room {
@@ -249,13 +274,6 @@ a:hover {
 
 .active-room i {
     color: white;
-}
-
-.room-block:hover {
-    transition: .50s;
-    box-shadow: 0 0px 15px #56b343;
-    background: #56b343;
-    color: white !important;
 }
 
 .dev {
@@ -282,20 +300,11 @@ a:hover {
     background: rgba(255, 255, 255, 0.925);
     border-radius: 2px;
     width: 47%;
+    cursor: pointer;
 }
 
 .room-block-inner i {
     font-size: 40px;
-}
-
-.room-block-inner i:hover {
-    color: white;
-}
-
-.room-block-inner:hover {
-    box-shadow: 0 0px 10px #56b343;
-    background: #56b343;
-    color: white;
 }
 
 .ml {
@@ -314,6 +323,22 @@ a:hover {
     margin-bottom: 15px;
 }
 
+.pl {
+    padding-left: 15px;
+}
+
+.pr {
+    padding-right: 15px;
+}
+
+.pt {
+    padding-top: 15px;
+}
+
+.pb {
+    padding-bottom: 15px;
+}
+
 .display-flex {
     display: flex;
     justify-content: center;
@@ -325,4 +350,42 @@ a:hover {
 
 .float-left {
     float: left !important;
+}
+
+.room-control {
+    height: 90.3vh;
+    background: white;
+    position: absolute;
+    z-index: -1;
+}
+
+.header,
+.body {
+    z-index: -5;
+    position: relative;
+}
+
+.push-room-control-down {
+    transform: translateY(1000px);
+}
+
+.pointer i {
+    cursor: pointer;
+}
+
+.room-control-header {
+    padding: 15px;
+}
+
+.room-device-control {
+    border: 1px solid black;
+    width: 100%;
+    padding: 15px;
+}
+
+.room-dev-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 15px;
 }
