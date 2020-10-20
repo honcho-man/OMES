@@ -3,7 +3,7 @@
  if (isset($_SESSION['username'])){ 
     $currentusername = $_SESSION['username'];
 
-    require "C:/xampp/htdocs/OMES/scripts/php/config.php";
+    require "../../../OMES/scripts/php/config.php";
     
 
    
