@@ -2,8 +2,8 @@
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
+define('DB_USERNAME', 'devTech');
+define('DB_PASSWORD', 'Oladmuni2020$');
 define('DB_NAME', 'omes-home-app');
  
 /* Attempt to connect to MySQL database */

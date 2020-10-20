@@ -1,7 +1,7 @@
 <?php
 $host       = "localhost";
-$username   = "root";
-$password   = "";
+$username   = "devTech";
+$password   = "Oladmuni2020$";
 $dbname     = "omes-home-app"; // will use later
 $dsn        = "mysql:host=$host;dbname=$dbname"; // will use later
 $options    = array(
